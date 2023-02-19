@@ -14,17 +14,17 @@ module.exports = {
         '**/__tests__/*.{cy,spec}.{js,ts,jsx,tsx}',
         'cypress/e2e/**/*.{cy,spec}.{js,ts,jsx,tsx}',
       ],
-      extends: [ 'plugin:cypress/recommended' ],
+      extends: [ 'plugin:cypress/recommended' ], 
     },
   ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-  },
+  parserOptions: { ecmaVersion: 'latest', },
   rules: {
-    quotes: [ 2, 'single' ],
+    'quotes': [ 2, 'single' ],
     'spaced-comment': [ 'error', 'always' ],
     'array-bracket-spacing': [ 'error', 'always' ],
     'object-curly-spacing': [ 'error', 'always' ],
+    'indent': [ 'error', 2 ],
+    'object-curly-newline': [ 'error', { 'minProperties': 3, 'multiline': true } ],
     'no-multiple-empty-lines': [ 'error', { 'max': 1 } ],
     'eol-last': [ 'error', 'always' ]
   },
