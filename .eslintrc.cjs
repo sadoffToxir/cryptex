@@ -20,7 +20,6 @@ module.exports = {
   parserOptions: { ecmaVersion: 'latest', },
   rules: {
     'quotes': [ 2, 'single' ],
-    'spaced-comment': [ 'error', 'always' ],
     'array-bracket-spacing': [ 'error', 'always' ],
     'object-curly-spacing': [ 'error', 'always' ],
     'indent': [ 'error', 2 ],
