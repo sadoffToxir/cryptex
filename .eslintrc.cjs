@@ -4,8 +4,7 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 module.exports = {
   root: true,
   extends: [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
     '@vue/eslint-config-typescript',
   ],
   overrides: [
@@ -19,12 +18,12 @@ module.exports = {
   ],
   parserOptions: { ecmaVersion: 'latest', },
   rules: {
-    'quotes': [ 2, 'single' ],
     'array-bracket-spacing': [ 'error', 'always' ],
-    'object-curly-spacing': [ 'error', 'always' ],
+    'eol-last': [ 'error', 'always' ],
     'indent': [ 'error', 2 ],
-    'object-curly-newline': [ 'error', { 'minProperties': 3, 'multiline': true } ],
     'no-multiple-empty-lines': [ 'error', { 'max': 1 } ],
-    'eol-last': [ 'error', 'always' ]
+    'object-curly-newline': [ 'error', { 'minProperties': 3, 'multiline': true } ],
+    'object-curly-spacing': [ 'error', 'always' ],
+    'quotes': [ 2, 'single' ],
   },
 };
