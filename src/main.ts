@@ -2,10 +2,14 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
+
+import plugins from '@/plugins'
 
 const app = createApp(App)
 
-app.use(router)
+for(const plugin in plugins) {
+  //@ts-ignore
+  app.use(plugins[plugin])
+}
 
 app.mount('#app')
