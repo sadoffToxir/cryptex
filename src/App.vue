@@ -2,9 +2,9 @@
   <v-app>
     <CoreDrawer />
     <main>
-      <container>
+      <v-container fluid>
         <RouterView />
-      </container>
+      </v-container>
     </main>
   </v-app>
 </template>
