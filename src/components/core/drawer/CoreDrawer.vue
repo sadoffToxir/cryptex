@@ -4,10 +4,18 @@
     @click="rail = false"
   >
     <v-list-item
-      prepend-avatar="https://randomuser.me/api/portraits/men/85.jpg"
-      title="John Leider"
       nav
     >
+      <template #default>
+        <v-row>
+          <v-col class="d-flex justify-center">
+            <v-avatar
+              image="https://randomuser.me/api/portraits/men/85.jpg"
+              size="80"
+            />
+          </v-col>
+        </v-row>
+      </template>
       <template #append>
         <v-btn
           variant="text"
