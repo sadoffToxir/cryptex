@@ -1,13 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import ChainScanner from '@/views/ChainScanner.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: HomeView
-    // },
+    {
+      path: '/',
+      redirect: '/chain-scanner'
+    },
+    {
+      path: '/chain-scanner',
+      name: 'chain-scanner',
+      component: ChainScanner
+    }
     // {
     //   path: '/about',
     //   name: 'about',
