@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, onMounted, onBeforeUnmount, type Ref } from 'vue';
+import { computed, ref, onMounted, onBeforeUnmount } from 'vue';
 interface Props {
   date: number
   title: string
@@ -17,7 +17,7 @@ const props = defineProps<Props>()
 
 const currentTime = ref(new Date());
 const timeLeft = ref(getTimeRemaining(props.date));
-const intervalId = ref<Ref<null | number>>(null)
+const intervalId = ref<null | number>(null)
 
 const formatTimer = computed(() => {
   const { hours, minutes, seconds } = timeLeft.value;
