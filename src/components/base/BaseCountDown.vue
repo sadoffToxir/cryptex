@@ -17,7 +17,7 @@ const props = defineProps<Props>()
 
 const currentTime = ref(new Date());
 const timeLeft = ref(getTimeRemaining(props.date));
-const intervalId = ref<null | number>(null)
+const intervalId = ref<any>(null)
 
 const formatTimer = computed(() => {
   const { hours, minutes, seconds } = timeLeft.value;
