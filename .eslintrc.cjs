@@ -22,6 +22,7 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    quotes: ['error', 'single']
+    'quotes': ['error', 'single'],
+    'object-curly-spacing': ['error', 'always']
   }
 }
