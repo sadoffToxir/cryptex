@@ -23,6 +23,8 @@ module.exports = {
   },
   rules: {
     'quotes': ['error', 'single'],
-    'object-curly-spacing': ['error', 'always']
+    'object-curly-spacing': ['error', 'always'],
+    'no-multiple-empty-lines': ['error', 'always'],
+    'semi': ["error", "never"]
   }
 }
