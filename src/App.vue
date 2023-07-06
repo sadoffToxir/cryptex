@@ -1,13 +1,11 @@
 <template>
   <v-app>
-    <layout>
+    <v-layout>
       <CoreDrawer />
       <v-main>
-        <container>
-          <RouterView />
-        </container>
+        <RouterView />
       </v-main>
-    </layout>
+    </v-layout>
   </v-app>
 </template>
 
