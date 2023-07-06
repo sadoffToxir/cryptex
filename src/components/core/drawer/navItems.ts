@@ -1,9 +1,9 @@
 export default [
   {
     icon: 'mdi-database-search-outline',
-    title: 'Chain Scanner',
-    key: 'chain-scanner',
-    route: '/chain-scanner'
+    title: 'Block Scanner',
+    key: 'block-scanner',
+    route: '/block-scanner'
   },
   {
     icon: 'mdi-tools',

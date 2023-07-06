@@ -24,7 +24,8 @@ module.exports = {
   rules: {
     'quotes': ['error', 'single'],
     'object-curly-spacing': ['error', 'always'],
-    'no-multiple-empty-lines': ['error', 'always'],
-    'semi': ["error", "never"]
+    'no-multiple-empty-lines': ['error', { 'max': 1 }],
+    'semi': ['error', 'never'],
+    'vue/html-self-closing': 'error'
   }
 }

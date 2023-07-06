@@ -10,7 +10,7 @@
         <v-row>
           <v-col class="d-flex justify-center align-center">
             <v-avatar
-              image="src/assets/logo.ico"
+              :image="logo"
               size="50"
             />
             <span class="text-h5 font-weight-bold logo-text">
@@ -55,12 +55,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 import { lastHalving } from '@/config/constants'
 import navItems from './navItems'
 
 import BaseCountDown from '@/components/base/BaseCountDown.vue'
+
+import logo from '@/assets/logo.ico'
 
 const rail = ref(false)
 </script>

@@ -1,3 +1,0 @@
-<template>
-  ChainScanner
-</template>
