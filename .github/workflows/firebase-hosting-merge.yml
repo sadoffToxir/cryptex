@@ -6,9 +6,9 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - main
-steps:
-  env:
-    VITE_ETHERSCANAPIKEY: ${{ secrets.VITE_ETHERSCANAPIKEY }}
+
+env:
+  VITE_ETHERSCANAPIKEY: ${{ secrets.VITE_ETHERSCANAPIKEY }}
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest,
