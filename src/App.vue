@@ -14,5 +14,3 @@ import CoreDrawer from '@/components/core/drawer/CoreDrawer.vue'
 import { RouterView } from 'vue-router'
 </script>
 
-<style scoped>
-</style>

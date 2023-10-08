@@ -1,1 +1,19 @@
-{ "extends": ["stylelint-config-standard"] }
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recommended-vue/scss"
+  ],
+  "rules": {
+    "media-query-no-invalid": [
+      true,
+      {
+        "allowed-types": [
+          "screen",
+          "print",
+          "only",
+          "import"
+        ]
+      }
+    ]
+  }
+}

@@ -68,7 +68,7 @@ const rail = ref(false)
 </script>
 
 <style lang="scss">
-@import '@/assets/main.scss';
+@import '@/assets/main';
 
 .logo-text {
   color: $logo-color

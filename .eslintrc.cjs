@@ -26,6 +26,8 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'no-multiple-empty-lines': ['error', { 'max': 1 }],
     'semi': ['error', 'never'],
-    'vue/html-self-closing': 'error'
+    'vue/html-self-closing': 'error',
+    'indent': ['error', 2]
+
   }
 }
